@@ -1,0 +1,20 @@
+head { color: white;}
+.navtop{
+      margin: 40px auto 30px auto;
+      }
+
+.navtop .nav-item {
+      margin: auto 20px;}
+
+.navtop a{
+       color: #151617 !important;
+}
+
+
+.bg-dark {
+       background-color: #151617 !important;
+}
+.homeheader a {
+       color: white;
+       margin: 7px 9px;
+}

@@ -1,0 +1,16 @@
+.dashboard {
+      background-color: #f8f8fa;
+      margin-top: -24px;
+      padding-bottom: 50px;
+}
+.dashboard .row {
+      width: 100%;
+      }
+.dashboard .navbar {
+      background-color: white;
+      margin-top: 50px;
+      }
+.content {
+      margin-top: 50px;
+      width: 100%;
+}
