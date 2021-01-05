@@ -6,7 +6,7 @@
 .dashboard .row {
       width: 100%;
       }
-.dashboard .navbar {
+.dashboard .card {
       background-color: white;
       margin-top: 50px;
       }
@@ -14,3 +14,11 @@
       margin-top: 50px;
       width: 100%;
 }
+.list-group-item {
+      height: 49px;
+      font-size: 15px;
+      font-weight: 600;
+}
+
+.a:active {
+color: red !important;}

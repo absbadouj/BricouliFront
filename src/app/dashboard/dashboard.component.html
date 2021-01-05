@@ -1,39 +1,26 @@
 <div class="dashboard">
   <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-3"><nav class="navbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/dashboard/board">
-            Tableau de bord
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/dashboard/annonces">Annonces</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/dashboard/ventes">Ventes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/ventes/portfeuille">Portfeuille</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/ventes/factures">Factures</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/ventes/devis">Devis</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/parametres/mon-profil">Mon Profil Public</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/parametres/mes-coordonnees">Mes Coordonnées</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/parametres/retrait">Méthodes de retrait</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="col-sm-1">
+
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><a routerLink="/dashboard/board" routerLinkActive="active">Tableau de bord</a></li>
+          <li class="list-group-item"><a routerLink="/dashboard/annonces" routerLinkActive="active">Annonces</a></li>
+          <li class="list-group-item"><a routerLink="/dashboard/ventes">Ventes</a></li>
+          <li class="list-group-item"><a routerLink="/ventes/portfeuille">Portfeuille</a></li>
+          <li class="list-group-item"><a routerLink="/ventes/factures">Factures</a></li>
+          <li class="list-group-item"><a routerLink="/ventes/devis">Devis</a></li>
+          <li class="list-group-item"><a routerLink="/parametres/mon-profil">Mon Profil Public</a></li>
+          <li class="list-group-item"><a routerLink="/parametres/mes-coordonnees">Mes Coordonnées</a></li>
+          <li class="list-group-item"><a routerLink="/parametres/retrait">Méthodes de retrait</a></li>
+          <li class="list-group-item"><a routerLink="/dashboard/achats">Achats</a></li>
+          <li class="list-group-item"><a routerLink="/achats/devis">Devis</a></li>
+          <li class="list-group-item"><a routerLink="/achats/factures">Factures</a></li>
+
+        </ul>
+      </div>
 
     </div>
     <div class="col-sm-7 content">
@@ -46,6 +33,11 @@
       <app-retrait *ngIf="isRetraitRoute()"></app-retrait>
       <app-tboard *ngIf="isTableauBoardRoute()"></app-tboard>
       <app-ventes *ngIf="isVentesRoute()"></app-ventes>
+      <app-achatfactures *ngIf="isAchatsFacturesRoute()"></app-achatfactures>
+      <app-achats *ngIf="isAchatsRoute()"></app-achats>
+      <app-achatdevis *ngIf="isAchatsDevisRoute()"></app-achatdevis>
+
+
     </div>
     <div class="col-sm-1"></div>
   </div>

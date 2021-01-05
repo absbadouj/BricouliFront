@@ -1,0 +1,164 @@
+<div class="ajoute-annonce">
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-7">
+      <div class="card">
+        <div class="card-header">
+          <h1>Annonce</h1>
+        </div>
+        <div class="card-body">
+           <form #annonceForm="ngForm" (ngSubmit)="onSubmit()">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <h4 class="titre">Titre</h4>
+                  <p> Indiquez précisément ce que vous faites dans votre service. Ne précisez pas de prix, faites attention aux fautes, ne mettez pas de majuscules, et n'utilisez pas de ponctuation ni de signes (parenthèses, tirets, etc.). </p>
+                  <input id="titre" name="titre" [(ngModel)]="AnnonceModel.titre" #titre="ngModel" type="text" maxlength="80" class="form-control">
+                </div>
+
+                <div class="form-group">
+                  <h4 class="titre">Catégorie</h4>
+                  <p>  Suggérez à notre équipe de modération la catégorie la plus adaptée à votre microservice. Vous ne pourrez plus la modifier par la suite. </p>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <label for="Type">Type</label>
+                      <select id="Type" name="Type" [(ngModel)]="AnnonceModel.type" #type="ngModel" class="form-control">
+                        <option value="Service" selected>Service</option>
+                        <option value="Materiel">Matériel</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="Categoryservice">Categorie</label>
+                      <div class="form-group">
+                        <select id="Categoryservice" name="Categoryservice" [(ngModel)]="AnnonceModel.categorie" #Categoryservice="ngModel" class="form-control">
+                          <option value="Climatisation" selected>Climatisation</option>
+                          <option value="Jardinage">Jardinage</option>
+                          <option value="Nettoyage">Nettoyage</option>
+                          <option value="Plomberie">Plomberie</option>
+                          <option value="Piscine">Piscine</option>
+                          <option value="Hygiene">Hygiene</option>
+                          <option value="Bricolage">Bricolage</option>
+                          <option value="Electricite">Electricite</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                    <h4 class="titre">Description</h4>
+                    <p> C’est la partie la plus importante de votre annonce, alors soignez-la ! Rédigez un texte original, présentez-vous, vérifiez attentivement votre orthographe, rassurez vos futurs clients sur vos compétences et détaillez ce que vous faites. Définissez des limites, et bien sûr appliquez nos conseils (disponibles sur l’aide) pour que votre microservice soit validé par notre équipe de modération.  </p>
+                  <textarea id="Body" name="Body" [(ngModel)]="AnnonceModel.description" #Body="ngModel" cols="50" rows="8" class="form-control" maxlength="2000"></textarea>
+                </div>
+                <div class="form-group">
+                  <h4 class="titre">Délai de réalisation</h4>
+                  <p>  C’est la durée que prendra votre service basique uniquement, entre le moment où le modérateur accepterez la commande et celui où vous la livrerez. </p>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <label for="Duree">Durée</label>
+                      <select id="Duree" name="Duree" [(ngModel)]="AnnonceModel.duree" #Duree="ngModel" class="form-control">
+                        <option value="un jour" selected>Un jour</option>
+                        <option value="deux jours">Deux jours</option>
+                        <option value="trois jours">Trois jours</option>
+                        <option value="quatre jours">Quatre jours</option>
+                        <option value="cinq jours">Cinq jours</option>
+                        <option value="six jours">Six jours</option>
+                        <option value="Une semaine">Une semaine</option>
+                      </select>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <label for="Duree2">Autre</label>
+                      <input id="Duree2" name="Duree2" [(ngModel)]="AnnonceModel.duree" #Duree2="ngModel" type="text" maxlength="80" class="form-control">
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <h4 class="titre">Galerie</h4>
+                  <p> La 1re image, principale, sera utilisée dans la recherche, les catégories, et sur votre profil. C’est la plus importante. Afin que votre service se démarque des autres, privilégiez une miniature lisible en format réduit, en rapport direct avec ce que vous faites dans votre annonce, et surtout : de votre création. </p>
+                  <div class="row">
+                    <div class="col-sm-12 imageinsert">
+                      <input type="file" ng-model="file_upload" #fileInput id="file" accept="image/*"  (change)="fileChange($event)" style="height: 100%" class="form-control">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <h4 class="titre">Consignes de réalisation</h4>
+                  <p> C’est le premier message privé que votre client recevra automatiquement après avoir commandé. Demandez-lui tout ce dont vous avez besoin pour mener à bien votre commande : Photos, exemples, adresse de livraison, demander les préferences et les éxigences de la client. etc.  </p>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <textarea id="Consigne" name="Consigne"  cols="50" rows="4" class="form-control" maxlength="1000"></textarea>
+                    </div>
+                  </div>
+                </div>
+
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="Tags">Tags</label>
+                    <input id="Tags" type="text" name="Tags" [(ngModel)]="AnnonceModel.subtitle" #Tags="ngModel" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                      <label for="Ville">Ville</label>
+                      <input id="Ville" type="text" name="Ville" [(ngModel)]="AnnonceModel.ville" #Ville="ngModel" class="form-control">
+                    </div>
+                  </div>
+              </div>
+                <div class="form-group">
+                  <h4 class="titre">Prix de départ</h4>
+                  <p>  Choisissez le prix de départ de votre annonce basique de location de matériel basique, c’est-à-dire sans options.</p>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <label for="Prix">Prix</label>
+                      <input id="Prix" name="Prix"  type="text" maxlength="80" class="form-control">
+
+
+                    </div>
+
+                    <div class="col-sm-6">
+                      <label for="Duree3">Autre</label>
+                      <select id="Duree3" name="Duree3" class="form-control">
+                        <option value="un jour" selected>Un jour</option>
+                        <option value="deux jours">Deux jours</option>
+                        <option value="trois jours">Trois jours</option>
+                        <option value="quatre jours">Quatre jours</option>
+                        <option value="cinq jours">Cinq jours</option>
+                        <option value="six jours">Six jours</option>
+                        <option value="Une semaine">Une semaine</option>
+                      </select>
+                    </div>
+
+                  </div>
+                </div>
+
+
+                <div class="form-group">
+                  <button class="btn btn-primary" style="margin-top: 30px">Enregistrer et Publier</button>
+                </div>
+
+              </div>
+
+
+
+              <!-- Side bare Form N 2 -->
+
+
+
+
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      {{ AnnonceModel.value | json }}
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+</div>

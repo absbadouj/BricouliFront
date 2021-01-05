@@ -1,0 +1,38 @@
+<div class="demandedevis">
+  <div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-header">
+          <h1>Demander un devis</h1>
+        </div>
+        <div class="card-body">
+          <h6>Demander un devis pour ce service</h6>
+          <div class="row">
+            <div class="col-sm-12">
+
+              <form #DevisForm="ngForm" (ngSubmit)="onSubmit()">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <input id="date" name="date" [(ngModel)]="DevisModel.date" #date="ngModel" type="text" maxlength="80" class="form-control">
+                  </div>
+                </div>
+              </form>
+
+              <p>Adresse de Livraison: Indiquez le lieu d'intervention</p>
+              <p>Consigne et informations</p>
+                <p>testeeeeeeeeeeee</p>
+                <p>Titre</p>
+                <p>type</p>
+                <p>Je suis disponible à partir du </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="col-sm-3"></div>
+
+  </div>
+</div>

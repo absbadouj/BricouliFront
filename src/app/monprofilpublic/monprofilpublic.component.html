@@ -1,3 +1,33 @@
-<p>
-  monprofilpublic works!
-</p>
+<div class="Profilpublic">
+  <div class="card">
+    <div class="card-header">
+      <h1>Mon Profil Public</h1>
+    </div>
+    <div class="card-body">
+      <p> En tant que vendeur, vous disposez d’un profil public présentant vos services en vente. Complétez-le avec soin, sans indiquer de coordonnée personnelle ni faire la promotion d’un autre moyen de contact que via Bricouli. </p>
+      <div class="row">
+        <div class="col-sm-6">
+          <h5>Photo de profil</h5>
+          <h6> Montrez-vous ! Les vendeurs avec une photo les représentant vraiment font plus de ventes que la moyenne. </h6>
+          <br>
+          <input type="file" id="file" accept="image/*"  (change)="fileChange($event)" class="form-control">
+        </div>
+        <div class="col-sm-6">
+          <h5>Photo de couverture</h5>
+          <h6> Ce n’est pas obligatoire, mais c’est joli. Personnalisez votre photo de couverture pour vous démarquer.  </h6>
+          <br>
+          <input type="file" id="file2" accept="image/*"  (change)="fileChange($event)" class="form-control">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <br>
+          <h5>Biographie</h5>
+          <p> Présentez-vous en une phrase ou plus afin que vos clients en sachent un peu plus sur qui vous êtes. Attention : ce n’est pas votre microservice, et aucun lien externe, identifiant de réseau social, adresse e-mail ou numéro de téléphone n’est permis. </p>
+          <textarea id="bio" name="bio"  cols="50" rows="10" class="form-control" maxlength="1000"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

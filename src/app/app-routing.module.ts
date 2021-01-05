@@ -12,6 +12,14 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { TboardComponent } from './tboard/tboard.component';
 import { AnnoncesComponent } from './annonces/annonces.component';
 import { VentesComponent } from './ventes/ventes.component';
+import { AjouteAnnonceComponent } from './ajoute-annonce/ajoute-annonce.component';
+import { PaiementComponent } from './paiement/paiement.component';
+import { DemandedevisComponent } from './demandedevis/demandedevis.component';
+import { AchatdevisComponent } from './achatdevis/achatdevis.component';
+import { AchatfacturesComponent } from './achatfactures/achatfactures.component';
+import { AchatsComponent } from './achats/achats.component';
+
+
 
 
 
@@ -83,6 +91,30 @@ const routes: Routes = [
        },
        {
        path: 'parametres/mes-coordonnees',
+       component: DashboardComponent
+       },
+       {
+       path: 'ventes/creation-de-service',
+       component: AjouteAnnonceComponent
+       },
+       {
+       path: 'devis',
+       component: DemandedevisComponent
+       },
+       {
+       path: 'paiement',
+       component: PaiementComponent
+       },
+       {
+       path: 'dashboard/achats',
+       component: DashboardComponent
+       },
+       {
+       path: 'achats/devis',
+       component: DashboardComponent
+       },
+       {
+       path: 'achats/factures',
        component: DashboardComponent
        }
 ];

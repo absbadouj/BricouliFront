@@ -1,0 +1,17 @@
+.tboard { width: 100%; margin: 0px; background-color: white;}
+
+.tboard .card-header{
+    background-color: black !important;
+}
+.tboard h1{
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.208;
+    color: #fff;
+    font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.card1, .card2, .card3 {
+margin: 20px 0px 20px 5px;
+background-color: #007bff !important;}

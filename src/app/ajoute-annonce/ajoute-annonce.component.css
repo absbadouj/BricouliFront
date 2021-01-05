@@ -1,0 +1,32 @@
+.ajoute-annonce .card-header{
+    background-color: black !important;
+}
+
+.ajoute-annonce {
+      background-color: #f8f8fa;
+      margin-top: -24px;
+      padding-bottom: 50px;
+      width: 100%;
+}
+.ajoute-annonce .row {
+      width: 100%;
+      }
+.ajoute-annonce .card {
+      background-color: white;
+      margin-top: 50px;
+      }
+.ajoute-annonce h1{
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.208;
+    color: #fff;
+    font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.titre {
+    margin: 15px 0;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 1.2;
+   }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
@@ -13,7 +13,6 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
   }
-
    isAnnoncesRoute() {
              return this.router.url === '/dashboard/annonces';
           }
@@ -45,4 +44,16 @@ export class DashboardComponent implements OnInit {
     isMescordRoute() {
                             return this.router.url === '/parametres/mes-coordonnees';
                       }
+
+   isAchatsRoute() {
+                   return this.router.url === '/dashboard/achats';
+                }
+   isAchatsDevisRoute() {
+                   return this.router.url === '/achats/devis';
+                }
+
+   isAchatsFacturesRoute() {
+                   return this.router.url === '/achats/factures';
+                }
+
 }

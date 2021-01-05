@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -23,6 +24,14 @@ import { DevisComponent } from './devis/devis.component';
 import { MonprofilpublicComponent } from './monprofilpublic/monprofilpublic.component';
 import { RetraitComponent } from './retrait/retrait.component';
 import { MescoordonnesComponent } from './mescoordonnes/mescoordonnes.component';
+import { AjouteAnnonceComponent } from './ajoute-annonce/ajoute-annonce.component';
+import { PaiementComponent } from './paiement/paiement.component';
+import { DemandedevisComponent } from './demandedevis/demandedevis.component';
+import { AchatdevisComponent } from './achatdevis/achatdevis.component';
+import { AchatfacturesComponent } from './achatfactures/achatfactures.component';
+import { AchatsComponent } from './achats/achats.component';
+import { CommandeComponent } from './commande/commande.component';
+import { MessageComponent } from './message/message.component';
 
 @NgModule({
   declarations: [
@@ -46,11 +55,22 @@ import { MescoordonnesComponent } from './mescoordonnes/mescoordonnes.component'
     DevisComponent,
     MonprofilpublicComponent,
     RetraitComponent,
-    MescoordonnesComponent
+    MescoordonnesComponent,
+    AjouteAnnonceComponent,
+    PaiementComponent,
+    DemandedevisComponent,
+    AchatdevisComponent,
+    AchatfacturesComponent,
+    AchatsComponent,
+    CommandeComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

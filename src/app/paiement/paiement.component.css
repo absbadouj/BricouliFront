@@ -1,0 +1,18 @@
+.paiement { width: 100%; margin-top: -24px; background-color: #f8f8fa;}
+.paiement .card{ margin: 100px auto;}
+.paiement .card-header{
+    background-color: black !important;
+}
+.paiement h1{
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.208;
+    color: #fff;
+    font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.paiement .row {
+    width: 100%;
+}
+

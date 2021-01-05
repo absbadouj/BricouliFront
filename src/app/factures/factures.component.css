@@ -1,0 +1,13 @@
+.factures { width: 100%; margin: 0px; background-color: white;}
+
+.factures .card-header{
+    background-color: black !important;
+}
+.factures h1{
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.208;
+    color: #fff;
+    font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
