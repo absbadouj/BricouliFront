@@ -18,6 +18,8 @@ import { DemandedevisComponent } from './demandedevis/demandedevis.component';
 import { AchatdevisComponent } from './achatdevis/achatdevis.component';
 import { AchatfacturesComponent } from './achatfactures/achatfactures.component';
 import { AchatsComponent } from './achats/achats.component';
+import { CommandeComponent } from './commande/commande.component';
+
 
 
 
@@ -116,7 +118,11 @@ const routes: Routes = [
        {
        path: 'achats/factures',
        component: DashboardComponent
-       }
+       },
+       {
+       path: 'commande',
+       component: CommandeComponent
+       },
 ];
 
 @NgModule({

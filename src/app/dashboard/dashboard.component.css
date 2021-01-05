@@ -20,5 +20,5 @@
       font-weight: 600;
 }
 
-.a:active {
+a:active {
 color: red !important;}
