@@ -3,6 +3,13 @@
 .tboard .card-header{
     background-color: black !important;
 }
+
+.tboard .row {
+    width: 100%;
+}
+.tboard .row .col-sm-4 {
+    width: 80%;
+    }
 .tboard h1{
     margin-bottom: 0;
     font-size: 24px;
@@ -13,5 +20,5 @@
 }
 
 .card1, .card2, .card3 {
-margin: 20px 0px 20px 5px;
+margin: 10px;
 background-color: #007bff !important;}
