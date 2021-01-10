@@ -8,13 +8,13 @@
         <div class="level">
           <h6> Annonces Validés </h6>
         </div>
-        <div class="listv">
-          <div class="card">
+        <div class="listv" *ngIf="annonceservice.listAnnonceuser">
+          <div class="card" *ngFor="let a of annonceservice.listAnnonces">
             <div class="card-body">
               <div class="row">
                 <div class="col-sm-2"><img src="img_girl.jpg" width="80px" height="40px">
                 </div>
-                <div class="col-sm-7"><h6>ici le titre </h6></div>
+                <div class="col-sm-7"><h6> {{ a.titre }} </h6></div>
                 <div class="col-sm-3">buttons</div>
               </div>
             </div>

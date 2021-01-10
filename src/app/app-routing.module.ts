@@ -4,7 +4,6 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { CategorieComponent } from './categorie/categorie.component';
-import { ServicesComponent } from './services/services.component';
 import { CategoryComponent } from './category/category.component';
 import { AddannonceComponent } from './addannonce/addannonce.component';
 import { AnnonceComponent } from './annonce/annonce.component';

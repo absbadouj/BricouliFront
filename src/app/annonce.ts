@@ -1,6 +1,4 @@
 export class Annonce {
-public id: number;
-public type: string;
 constructor(
 
         public note: number,
@@ -10,6 +8,6 @@ constructor(
         public valable: boolean,
         public ville: string,
         public categorie: string,
-        public duree: string
+        public duree: number
     ) {}
 }
