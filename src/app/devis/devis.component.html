@@ -1,5 +1,6 @@
 <div class="devis">
-  <div class="card">
+  <div class="card" *ngIf="commandeservice.listDevisvent"
+  >
     <div class="card-header">
       <h1>Devis</h1>
     </div>
@@ -15,9 +16,9 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-          <td>John</td>
-          <td>john@example.com</td>
+        <tr *ngFor="let d of commandeservice.listDevisvent">
+          <td>{{d.date}}</td>
+          <td>{{d.montant}}</td>
 
           <td>Doe</td>
           <td>Doe</td>

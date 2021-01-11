@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
+import { CommandeserviceService } from '../Service/commandeservice.service';
+import { Annonce } from '../annonce';
+import { Devis } from '../devis';
 
 @Component({
   selector: 'app-paiement',
@@ -6,8 +12,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./paiement.component.css']
 })
 export class PaiementComponent implements OnInit {
+id
 
-  constructor() { }
+  constructor(private commandeservice: CommandeserviceService, private route: ActivatedRoute) {
+
+     let iddevis = parseInt(this.route.snapshot.paramMap.get('idDevis'));
+     this.id = iddevis;
+     this.commandeservice.GetOneDevis(iddevis);
+     this.annonceservice.GetOneAnnonce(idannonce);
+
+     }
 
   ngOnInit() {
   }

@@ -7,23 +7,50 @@
           <h1>Demander un devis</h1>
         </div>
         <div class="card-body">
-          <h6>Demander un devis pour ce service</h6>
+          <h6>Demander un devis pour: </h6>
+          <h1>{{ annonceservice.Oneannonce.titre }}</h1>
+          <p>Titre</p>
+          <p>type</p>
           <div class="row">
             <div class="col-sm-12">
 
               <form #DevisForm="ngForm" (ngSubmit)="onSubmit()">
                 <div class="row">
                   <div class="col-sm-12">
-                    <input id="date" name="date" [(ngModel)]="DevisModel.date" #date="ngModel" type="text" maxlength="80" class="form-control">
+                    <h5 class="titre">Message</h5>
+                    <p>Consigne et informations</p>
+                    <input id="message" name="message" [(ngModel)]="DevisModel.message" #message="ngModel" type="text" maxlength="80" class="form-control">
                   </div>
                 </div>
+
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h5 class="titre">Adresse de livraison</h5>
+                    <p>Adresse de Livraison: Indiquez le lieu d'intervention</p>
+                    <textarea id="adresse" name="adresse" [(ngModel)]="DevisModel.adresse" #date="ngModel" cols="50" rows="4" type="text" maxlength="2000" class="form-control">
+                    </textarea>
+                  </div>
+                </div>
+
+
+
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <h5 class="titre">Date :</h5>
+                      <p> A partir de : Indiquez la date convenable pour commencer la commande. </p>
+                      <input type="date" [(ngModel)]="DevisModel.date" id="date" name="date" #date="ngModel" min="2021-01-12" max="2021-12-31" step="1" class="form-control">
+                    </div>
+                  </div>
+
+                <div class="form-group">
+                  <button class="btn btn-primary" style="margin-top: 30px">Enregistrer et Publier</button>
+                </div>
+
               </form>
 
-              <p>Adresse de Livraison: Indiquez le lieu d'intervention</p>
-              <p>Consigne et informations</p>
+
                 <p>testeeeeeeeeeeee</p>
-                <p>Titre</p>
-                <p>type</p>
+
                 <p>Je suis disponible à partir du </p>
             </div>
           </div>

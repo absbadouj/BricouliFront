@@ -1,12 +1,9 @@
 export class Devis {
 public id: number;
-constructor(
+public status: string
 
-        public massage: string,
-        public date: string,
-        public heure: string,
+constructor(
+        public message: string,
         public adresse: string,
-        public montant: number,
-        public status: string
     ) {}
 }

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { UserserviceService } from '../Service/userservice.service';
 import { AnnonceServiceService } from '../Service/annonce-service.service';
+import { Router } from '@angular/router';
+
 
 
 @Component({
@@ -11,7 +13,7 @@ import { AnnonceServiceService } from '../Service/annonce-service.service';
 export class AccueilComponent implements OnInit {
  listAnnonces
 
-  constructor(private annonceservice: AnnonceServiceService) {
+  constructor(private annonceservice: AnnonceServiceService, private router: Router) {
 
   }
 

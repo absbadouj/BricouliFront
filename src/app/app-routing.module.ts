@@ -18,6 +18,8 @@ import { AchatdevisComponent } from './achatdevis/achatdevis.component';
 import { AchatfacturesComponent } from './achatfactures/achatfactures.component';
 import { AchatsComponent } from './achats/achats.component';
 import { CommandeComponent } from './commande/commande.component';
+import { PageDevisComponent } from './page-devis/page-devis.component';
+
 
 
 
@@ -99,11 +101,11 @@ const routes: Routes = [
        component: AjouteAnnonceComponent
        },
        {
-       path: 'devis',
+       path: 'devis/:idAnnonce',
        component: DemandedevisComponent
        },
        {
-       path: 'paiement',
+       path: 'paiement/:idAnnonce',
        component: PaiementComponent
        },
        {
@@ -122,6 +124,18 @@ const routes: Routes = [
        path: 'commande',
        component: CommandeComponent
        },
+       {
+       path: 'annonce/:type/:idAnnonce/:path',
+       component: AnnonceComponent
+       },
+       {
+       path: 'devis/ventes/:idDevis',
+       component: PageDevisComponent
+       },
+       {
+        path: 'devis/achat/:idDevis',
+        component: PageDevisComponent
+        },
 ];
 
 @NgModule({

@@ -1,3 +1,33 @@
-<p>
-  annonce works!
-</p>
+<div class="annonce">
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-7">
+      <div class="card" *ngIf="annonceservice.Oneannonce">
+        <div class="card-header">
+          <h1>hello</h1>
+        </div>
+        <div class="card-body" >
+          <div class="titre">{{ annonceservice.Oneannonce.titre }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="action">
+
+        <div class="row">
+          <a [routerLink]="[ '/devis',annonceservice.Oneannonce.idAnnonce ]">
+            <button type="button" class="btn btn-success">Demander un devis</button>
+          </a>
+        </div>
+
+        <div class="row">
+          <a [routerLink]="[ '/paiement',annonceservice.Oneannonce.idAnnonce ]">
+            <button type="button" class="btn btn-primary"> Commander le service </button>
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+</div>

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { CommandeserviceService } from '../Service/commandeservice.service';
+import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-devis',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DevisComponent implements OnInit {
 
-  constructor() { }
+  constructor(private commandeservice: CommandeserviceService, private route: ActivatedRoute) {
+   this.commandeservice.GetDevisseller();
+  }
 
   ngOnInit() {
+
   }
 
 }

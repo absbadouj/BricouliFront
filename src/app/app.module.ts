@@ -34,6 +34,7 @@ import { CommandeComponent } from './commande/commande.component';
 import { MessageComponent } from './message/message.component';
 import { UserserviceService } from './Service/userservice.service';
 import { AnnonceServiceService } from './Service/annonce-service.service';
+import { PageDevisComponent } from './page-devis/page-devis.component';
 
 
 
@@ -67,7 +68,8 @@ import { AnnonceServiceService } from './Service/annonce-service.service';
     AchatfacturesComponent,
     AchatsComponent,
     CommandeComponent,
-    MessageComponent
+    MessageComponent,
+    PageDevisComponent
   ],
   imports: [
     BrowserModule,
