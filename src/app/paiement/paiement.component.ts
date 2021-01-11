@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 import { CommandeserviceService } from '../Service/commandeservice.service';
+import { AnnonceServiceService } from '../Service/annonce-service.service';
 import { Annonce } from '../annonce';
 import { Devis } from '../devis';
 
@@ -14,16 +15,23 @@ import { Devis } from '../devis';
 export class PaiementComponent implements OnInit {
 id
 
+
   constructor(private commandeservice: CommandeserviceService, private route: ActivatedRoute) {
 
      let iddevis = parseInt(this.route.snapshot.paramMap.get('idDevis'));
      this.id = iddevis;
      this.commandeservice.GetOneDevis(iddevis);
-     this.annonceservice.GetOneAnnonce(idannonce);
+
 
      }
 
   ngOnInit() {
+
   }
+
+  onCommande(){
+        this.commandeservice.AddCommande(this.id,"je le veux");
+
+    }
 
 }

@@ -105,7 +105,7 @@ const routes: Routes = [
        component: DemandedevisComponent
        },
        {
-       path: 'paiement/:idAnnonce',
+       path: 'paiement/:idDevis',
        component: PaiementComponent
        },
        {

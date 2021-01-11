@@ -7,7 +7,7 @@
           <h1>Résumé de la commande</h1>
         </div>
         <div class="card-body">
-          <h5>Titre</h5>
+          <h5>titre: {{ commandeservice.Onedevis.annonce.titre}}</h5>
           <h6>Délai de réalisation</h6>
 
         </div>
@@ -18,13 +18,15 @@
       <div class="card">
         <div class="card-header">
           <h1>
-            Coordonnées de facturation
+            Coordonnées de facturation : {{ commandeservice.Onedevis.montant}}
           </h1>
         </div>
         <div class="card-body">
           <h5>Adresse de Livraison</h5>
           <h6></h6>
-
+          <a>
+            <button type="button" class="btn btn-success" (click)="onCommande()">Passer la commande et payer</button>
+          </a>
         </div>
       </div>
       <div class="card">

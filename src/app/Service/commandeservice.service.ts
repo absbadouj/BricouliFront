@@ -92,6 +92,13 @@ AccepterDevis(iddevis,msg){
     }
 
 
+AddCommande(iddevis,c){
+   this.httpClient.post(this.apiString+'/commande/passer/2/'+iddevis, c).toPromise().then(data => {
+                                                  this.router.navigate(['commande']);
+                                                  console.log(data);
+    });}
+
+
 
 
 }
