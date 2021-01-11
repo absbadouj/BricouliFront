@@ -15,9 +15,9 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-          <td>John</td>
-          <td>john@example.com</td>
+        <tr *ngFor="let d of commandeservice.CommandeVent">
+          <td>{{ commandeservice.CommandeVent.titre }}</td>
+          <td>{{ commandeservice.CommandeVent.subtitle }}</td>
 
           <td>Doe</td>
           <td>Doe</td>

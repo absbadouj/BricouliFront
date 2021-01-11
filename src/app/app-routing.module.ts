@@ -121,7 +121,7 @@ const routes: Routes = [
        component: DashboardComponent
        },
        {
-       path: 'commande',
+       path: 'commande/:idCommande',
        component: CommandeComponent
        },
        {

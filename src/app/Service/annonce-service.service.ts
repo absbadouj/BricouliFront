@@ -38,16 +38,15 @@ Oneannonce
 
   }
 
-  AddAnnonceService(AnnonceModel,id,file){
-  let body = new FormData();
-  body.append("file", file);
-  body.append("Annonce", AnnonceModel);
-  this.httpClient.post(this.apiString+'/annonces/add/service/'+id,body).toPromise().then(data => {
-                                                 console.log(AnnonceModel);
-                                                 console.log("eeeeeeeeeeeeeee");
-                                                 this.router.navigate(['dashboard/annonces']);
-                                                 console.log(data);
-   });}
+  AddAnnonceService(AnnonceModel,idannonceur,idfile) : Observable<any[]>{
+  this.httpClient.post(this.apiString+'/annonces/add/'+idfile+'/service/'+idannonceur,AnnonceModel).toPromise().then(data => {
+  console.log(AnnonceModel);
+  this.Oneannonce = data;
+  console.log("eeee");
+  this.router.navigate(['dashboard/annonces']);
+  console.log(data);});
+  return this.Oneannonce;
+  }
 
    GetAnnoncesSeller() : Observable<any[]>{
    this.httpClient.get(this.apiString+'/annonces/Afficher/services/user/2')

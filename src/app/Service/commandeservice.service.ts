@@ -18,6 +18,9 @@ apiString:String = "http://localhost:8080"
 listDevisachat
 listDevisvent
 Onedevis
+Onecommande
+CommandeAchat
+CommandeVent
 
   constructor(private httpClient:HttpClient, private router: Router) { }
 
@@ -94,10 +97,50 @@ AccepterDevis(iddevis,msg){
 
 AddCommande(iddevis,c){
    this.httpClient.post(this.apiString+'/commande/passer/2/'+iddevis, c).toPromise().then(data => {
-                                                  this.router.navigate(['commande']);
-                                                  console.log(data);
-    });}
+   this.Onecommande = data
+   console.log(this.Onecommande)
+    this.router.navigate(['commande/'+this.Onecommande.idCommande]);
+    console.log(data);
+    });
+  }
 
+  GetOnecommande(idCommande) : Observable<any[]> {
+   this.httpClient.get(this.apiString+'/commande/afficher/'+idCommande)
+   .subscribe(data => {
+      this.Onecommande = data;
+      console.log("Get One Commande");
+      console.log(data);
+      }, (err)=>{
+      console.log(err);
+      });
+      return this.Onecommande;
+      }
+GetCommandeClient(iduser) : Observable<any[]>{
+      this.httpClient.get(this.apiString+'/commande/afficher/user/'+iduser)
+      .subscribe(data => {
+      this.CommandeAchat = data;
+      console.log("List commande client");
+      console.log(data);
+      }, (err)=>{
+      console.log(err);
+      });
+
+      return this.CommandeAchat;
+      }
+
+
+GetCommandeseller(iduser) : Observable<any[]>{
+      this.httpClient.get(this.apiString+'/commande/afficher/seller/'+iduser)
+      .subscribe(data => {
+      this.CommandeVent = data;
+      console.log("List commande seller");
+      console.log(data);
+      }, (err)=>{
+      console.log(err);
+      });
+
+      return this.CommandeVent;
+      }
 
 
 

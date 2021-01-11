@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { CommandeserviceService } from '../Service/commandeservice.service';
+import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-achats',
@@ -7,7 +10,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AchatsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private commandeservice: CommandeserviceService, private route: ActivatedRoute) {
+    this.commandeservice.GetCommandeClient(2);
+}
 
   ngOnInit() {
   }

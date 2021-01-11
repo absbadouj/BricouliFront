@@ -9,7 +9,7 @@
         <div class="row" *ngIf="annonceservice.listAnnonces">
           <div class="col-sm-4" *ngFor="let f of annonceservice.listAnnonces">
             <div class="serviceIllu">
-              <img src="#">
+              <img src="{{'data:image/jpg;base64,' + f.image.data}}">
             </div>
             <div class="serviceButtom">
               <div class="serviceTitle">
@@ -19,6 +19,8 @@
               </div>
               <div class="serviceAuteur">
                 {{ f.annonceur.designation }}
+
+
 
               </div>
               <div class="btn-reset">
