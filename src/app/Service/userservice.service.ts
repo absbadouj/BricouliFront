@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders, HttpClientModule} from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { Router } from '@angular/router';
+
 
 
 const optionRequete = {
@@ -14,10 +17,12 @@ const optionRequete = {
 export class UserserviceService {
 apiString:String = "http://localhost:8080"
 listUsers
+Oneuser
+CurrentUser
 
 
 
-  constructor(private httpClient:HttpClient) {
+  constructor(private httpClient:HttpClient, private router: Router) {
 
   }
 
@@ -45,6 +50,20 @@ listUsers
                    console.log(err);
                    }
               );
+  }
+
+
+  AddOneUser(user): Observable<any[]>{
+  this.httpClient.post(this.apiString+'/user/add',user).toPromise().then(data => {
+  console.log(user);
+  this.Oneuser = data;
+  this.router.navigate(['']);
+  console.log(data);});
+  return this.Oneuser;
+  }
+
+  AddOneSeller(){
+
   }
 
 

@@ -38,7 +38,7 @@ const routes: Routes = [
        },
 
        {
-       path: 'signup',
+       path: 'inscription',
        component: SignupComponent
        },
 
@@ -136,6 +136,10 @@ const routes: Routes = [
         path: 'devis/achat/:idDevis',
         component: PageDevisComponent
         },
+        {
+        path: 'connexion',
+        component: SigninComponent
+        }
 ];
 
 @NgModule({

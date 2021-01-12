@@ -1,4 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<app-header></app-header>
+<app-signin *ngIf="isConnexionRoute()"></app-signin>
+<app-signup *ngIf="isInscriptionRoute()"></app-signup>
+<app-header *ngIf="!isInscriptionRoute() && !isConnexionRoute()"></app-header>
 <router-outlet></router-outlet>
+
 
