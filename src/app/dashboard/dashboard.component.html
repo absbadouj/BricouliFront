@@ -5,21 +5,31 @@
     </div>
     <div class="col-sm-3">
       <div class="card">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><a routerLink="/dashboard/board" routerLinkActive="active">Tableau de bord</a></li>
-          <li class="list-group-item"><a routerLink="/dashboard/annonces" routerLinkActive="active">Annonces</a></li>
-          <li class="list-group-item"><a routerLink="/dashboard/ventes">Ventes</a></li>
-          <li class="list-group-item"><a routerLink="/ventes/portfeuille">Portfeuille</a></li>
-          <li class="list-group-item"><a routerLink="/ventes/factures">Factures</a></li>
-          <li class="list-group-item"><a routerLink="/ventes/devis">Devis</a></li>
-          <li class="list-group-item"><a routerLink="/parametres/mon-profil">Mon Profil Public</a></li>
-          <li class="list-group-item"><a routerLink="/parametres/mes-coordonnees">Mes Coordonnées</a></li>
-          <li class="list-group-item"><a routerLink="/parametres/retrait">Méthodes de retrait</a></li>
-          <li class="list-group-item"><a routerLink="/dashboard/achats">Achats</a></li>
-          <li class="list-group-item"><a routerLink="/achats/devis">Devis</a></li>
-          <li class="list-group-item"><a routerLink="/achats/factures">Factures</a></li>
-
-        </ul>
+        <div class="listventes">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" routerLinkActive="active"><a routerLink="/dashboard/board" routerLinkActive="active">Tableau de bord</a></li>
+            <li class="list-group-item" routerLinkActive="active"><a routerLink="/dashboard/annonces" routerLinkActive="active">Annonces</a></li>
+            <li class="list-group-item" routerLinkActive="active"><a routerLink="/dashboard/ventes" routerLinkActive="active">Ventes</a></li>
+            <li class="list-group-item" routerLinkActive="active"><a routerLink="/ventes/portfeuille" routerLinkActive="active">Portfeuille</a></li>
+            <li class="list-group-item" routerLinkActive="active"><a routerLink="/ventes/factures" routerLinkActive="active">Factures</a></li>
+            <li class="list-group-item" routerLinkActive="active"><a routerLink="/ventes/devis" routerLinkActive="active">Devis</a></li>
+            <li class="list-group-item" routerLinkActive="active"><a routerLink="/parametres/mon-profil" routerLinkActive="active">Mon Profil Public</a></li>
+            <li class="list-group-item" routerLinkActive="active"><a routerLink="/parametres/mes-coordonnees" routerLinkActive="active">Mes Coordonnées</a></li>
+            <li class="list-group-item" routerLinkActive="active"><a routerLink="/parametres/retrait" routerLinkActive="active">Méthodes de retrait</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h1>Achats</h1>
+        </div>
+        <div class="listventes">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" routerLinkActive="active"><a routerLink="/dashboard/achats" routerLinkActive="active">Achats</a></li>
+            <li class="list-group-item" routerLinkActive="active"><a routerLink="/achats/devis" routerLinkActive="active">Devis</a></li>
+            <li class="list-group-item" routerLinkActive="active"><a routerLink="/achats/factures" routerLinkActive="active">Factures</a></li>
+          </ul>
+        </div>
       </div>
 
     </div>

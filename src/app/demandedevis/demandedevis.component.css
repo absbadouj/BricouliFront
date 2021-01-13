@@ -1,8 +1,9 @@
 .demandedevis { width: 100%; margin-top: -24px; background-color: #f8f8fa;}
 .demandedevis .card{ margin: 100px auto;}
 .demandedevis .card-header{
-    background-color: black !important;
-}
+                  background-color: black !important;
+                      height: 80px;
+             }
 .demandedevis h1{
     margin-bottom: 0;
     font-size: 24px;
@@ -10,9 +11,40 @@
     line-height: 1.208;
     color: #fff;
     font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+        margin-top: 15px;
+        margin-left: 20px;
 }
 
 .demandedevis .row {
     width: 100%;
 }
 
+.image img {
+border: 3px solid black;
+}
+
+.titre h5 {
+margin-top: -72px;
+margin-left: 175px;
+font-size: 21px;
+font-weight: 600;
+color: black;
+}
+
+.categorie p {
+margin-right: 52px;
+margin-top: -30px;
+float: right;
+
+}
+
+.annonceur p {
+margin-left: 175px;
+margin-top: -5px;
+}
+
+.annoncebox {
+padding: 20px 26px;
+margin-top: 30px;
+padding-bottom: 30px;
+}

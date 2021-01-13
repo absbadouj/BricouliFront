@@ -2,6 +2,8 @@
   <div class="card">
     <div class="card-header">
       <h1>Annonces</h1>
+      <a [routerLink]="[ '/ventes/creation-de-service']">Nouveau service</a>
+
     </div>
     <div class="card-body">
       <div class="annoncev">
@@ -12,12 +14,15 @@
           <div class="card" *ngFor="let a of annonceservice.listAnnonces">
             <div class="card-body">
               <div class="row">
-                <div class="col-sm-2"><img src="img_girl.jpg" width="80px" height="40px">
+                <div class="col-sm-2 image"><img src="{{'data:image/jpg;base64,' + a.image.data}}" width="120px" height="80px">
                 </div>
-                <div class="col-sm-7"><h6> {{ a.titre }} </h6></div>
-                <div class="col-sm-3">buttons</div>
-              </div>
-            </div>
+                <div class="col-sm-5 titreser">
+                  <a [routerLink]="[ '/annonce/type',a.idAnnonce,'path' ]">
+                    <h6> {{ a.titre }} </h6>
+                  </a>
+                </div>
+                <div class="col-sm-2">{{ a.categorie }}</div>
+
           </div>
         </div>
       </div>
@@ -29,14 +34,19 @@
           <div class="card">
             <div class="card-body">
               <div class="row">
-                <div class="col-sm-2"><img src="img_girl.jpg" width="100px" height="50px">
+                <div class="col-sm-2 image">
+                  <img src="{{'data:image/jpg;base64,' + a.image.data}}" width="120px" height="80px">
                 </div>
-                <div class="col-sm-7"><h6>ici le titre </h6></div>
+                <div class="col-sm-7" titreserv>
+
+
+                </div>
                 <div class="col-sm-3">buttons</div>
               </div>
             </div>
           </div>
         </div>
+      </div></div>
 
       </div>
     </div>

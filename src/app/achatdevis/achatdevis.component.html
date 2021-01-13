@@ -2,34 +2,27 @@
   <div class="card" *ngIf="commandeservice.listDevisachat"
   >
     <div class="card-header">
-      <h1>Achat: Devis</h1>
+      <h1>Devis</h1>
     </div>
     <div class="card-body">
       <table class="table">
         <thead>
         <tr>
 
+          <th>Annonce</th>
           <th>Date</th>
-          <th></th>
-          <th>Montant</th>
-          <th></th>
+          <th>Etat</th>
+          <th>Envoyer à </th>
         </tr>
         </thead>
         <tbody>
         <tr *ngFor="let d of commandeservice.listDevisachat">
+          <td [routerLink]="[ '/devis/achat/',d.idDevis ]" ><a style="cursor: pointer; color: blue"> {{d.annonce.titre}} </a>
+            </td>
           <td>{{d.date}}</td>
-          <td>{{d.montant}}</td>
 
-          <td>Doe</td>
-          <td>Doe</td>
-
-        </tr>
-        <tr>
-          <td>John</td>
-          <td>john@example.com</td>
-
-          <td>Doe</td>
-          <td>Doe</td>
+          <td>{{d.etat}}</td>
+          <td>{{d.annonce.annonceur.nom}}</td>
 
         </tr>
         </tbody>

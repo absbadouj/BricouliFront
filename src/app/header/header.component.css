@@ -1,7 +1,6 @@
 head { color: white;}
 .navtop{
-      margin: 40px auto 30px auto;
-      }
+margin: 25px auto 25px auto;      }
 
 .navtop .nav-item {
       margin: auto 20px;}
@@ -16,5 +15,9 @@ head { color: white;}
 }
 .homeheader a {
        color: white;
-       margin: 7px 9px;
+       margin: 3px 9px;
+       font-weight: 600;
+       font-size: 13px !important;
 }
+
+

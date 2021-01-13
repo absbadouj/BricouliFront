@@ -49,7 +49,7 @@ Oneannonce
   }
 
    GetAnnoncesSeller() : Observable<any[]>{
-   this.httpClient.get(this.apiString+'/annonces/Afficher/services/user/2')
+   this.httpClient.get(this.apiString+'/annonces/Afficher/services/user/1')
    .subscribe(data => {
    this.listAnnonceuser = data;
    console.log("List annonce seller");

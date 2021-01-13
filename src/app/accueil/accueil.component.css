@@ -3,6 +3,58 @@
 }
 .services {
     background-color: #f8f8fa;
+    width: 101% !important;
 }
 
-.srvcs {margin: 50px;}
+.srvcs {margin: 50px;
+margin-left: 18%;
+margin-right: 14%;}
+
+
+.vignette img {
+width: 311px;
+margin: 0px 0px 0px 0px;
+height: 165px;
+}
+
+.serviceTitle h2{
+font-size: 17px;
+font-weight: 600;
+line-height: 1.3;
+word-break: break-word;
+margin: 14px 18px;
+color: #575757;
+font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.vignette {
+background-color: white;
+padding-bottom: 28px;
+margin-bottom: 35px;
+}
+
+.serviceAuteur img {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+margin-top: 8px;
+margin-left: 15px;
+}
+
+.serviceAuteur p {
+margin-left: 74px;
+margin-top: -38px;
+}
+
+
+
+.btn-cmd a{
+background-color: #efeff3;
+color: #55555f;
+margin-left: 15px;
+padding: 14px 100px;
+font-weight: 600;
+}
+
+.btn-cmd {
+margin-top: 50px;}
+

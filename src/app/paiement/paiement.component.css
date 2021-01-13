@@ -2,6 +2,7 @@
 .paiement .card{ margin: 100px auto;}
 .paiement .card-header{
     background-color: black !important;
+    height: 80px !important;
 }
 .paiement h1{
     margin-bottom: 0;
@@ -10,6 +11,8 @@
     line-height: 1.208;
     color: #fff;
     font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin-top: 15px;
+    margin-left: 20px;
 }
 
 .paiement .row {

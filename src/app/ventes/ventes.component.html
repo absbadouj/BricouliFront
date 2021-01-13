@@ -2,16 +2,26 @@
   <div class="card">
     <div class="card-header">
       <h1>Ventes</h1>
+      <input type="text" placeholder="Trouver des commandes" name="recherche" required class="form-control">
+      <select id="filter" class="form-control">
+        <option value="Terminer" selected>Terminer</option>
+        <option value="En cours">En cours</option>
+        <option value="Annuler">Annuler</option>
+        <option value="Récent">Récent</option>
+        <option value="Archive">Archive</option>
+
+
+      </select>
     </div>
     <div class="card-body">
       <table class="table">
         <thead>
         <tr>
 
-          <th>Date</th>
-          <th></th>
+          <th>Client</th>
+          <th>Service</th>
+          <th>Etat</th>
           <th>Montant</th>
-          <th></th>
         </tr>
         </thead>
         <tbody>

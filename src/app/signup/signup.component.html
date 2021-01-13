@@ -1,65 +1,75 @@
-<div class="signup">
+<div class="inscription">
   <div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-      <div class="card">
-        <div class="card-header">
-          <h1>Demander un devis</h1>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <div class="box">
+        <div class="logo">
+          <h3>INSCRIPTION</h3>
+          <p>  Afin de confirmer votre inscription, veuillez indiquer votre adresse e-mail. Choisissez également un nom d’utilisateur, qui vous permettra de vous connecter et sera affiché sur vos achats et ventes.  </p>
         </div>
-        <div class="card-body">
-          <h6> Créer un compte </h6>
-          <h1>{{ annonceservice.Oneannonce.titre }}</h1>
-          <p>Titre</p>
-          <p>type</p>
-          <div class="row">
-            <div class="col-sm-12">
-
-              <form #DevisForm="ngForm" (ngSubmit)="onSubmit()">
+        <div class="formulaire">
+          <form #annonceForm="ngForm" (ngSubmit)="onSubmit()">
+            <div class="row">
+              <div class="col-sm-12">
                 <div class="row">
-                  <div class="col-sm-12">
-                    <h5 class="titre">Message</h5>
-                    <p>Consigne et informations</p>
-                    <input id="message" name="message" [(ngModel)]="DevisModel.message" #message="ngModel" type="text" maxlength="80" class="form-control">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input id="nom" type="text" name="nom" [(ngModel)]="UserModel.nom" #nom="ngModel" placeholder="Nom" required class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input id="prenom" type="text" name="prenom" [(ngModel)]="UserModel.prenom" #prenom="ngModel" placeholder="Prénom" required class="form-control">
+                    </div>
                   </div>
                 </div>
-
                 <div class="row">
-                  <div class="col-sm-12">
-                    <h5 class="titre">Adresse de livraison</h5>
-                    <p>Adresse de Livraison: Indiquez le lieu d'intervention</p>
-                    <textarea id="adresse" name="adresse" [(ngModel)]="DevisModel.adresse" #date="ngModel" cols="50" rows="4" type="text" maxlength="2000" class="form-control">
-                    </textarea>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input id="emailc" type="email" name="emailc"  placeholder="Email" required class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input id="email" type="email" name="email" [(ngModel)]="UserModel.email" #email="ngModel" placeholder="Confirmation" required class="form-control">
+                    </div>
                   </div>
                 </div>
-
-
-
                 <div class="row">
-                  <div class="col-sm-12">
-                    <h5 class="titre">Date :</h5>
-                    <p> A partir de : Indiquez la date convenable pour commencer la commande. </p>
-                    <input type="date" [(ngModel)]="DevisModel.date" id="date" name="date" #date="ngModel" min="2021-01-12" max="2021-12-31" step="1" class="form-control">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input id="passe" type="password" name="passe" placeholder="Mot de passe" required  class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input id="passec" type="password" name="passec" [(ngModel)]="UserModel.passe" #email="ngModel" placeholder="Confirmation" required class="form-control">
+                    </div>
                   </div>
                 </div>
+                <p>  À titre d’information uniquement et afin de vous accueillir au mieux, indiquez-nous la raison principale de votre inscription. Vous n’aurez pas besoin de créer un autre compte si vous souhaitez passer d’une activité à l’autre. </p>
+
+
 
                 <div class="form-group">
-                  <button class="btn btn-primary" style="margin-top: 30px">Enregistrer et Publier</button>
+                  <button class="btn btn-primary" style="margin-top: 30px">Valider mon inscription</button>
                 </div>
 
-              </form>
+              </div>
 
 
-              <p>testeeeeeeeeeeee</p>
 
-              <p>Je suis disponible à partir du </p>
+              <!-- Side bare Form N 2 -->
+
+
+
+
             </div>
-          </div>
 
+          </form>
         </div>
       </div>
-
     </div>
-    <div class="col-sm-3"></div>
-
+    <div class="col-sm-2"></div>
   </div>
 </div>

@@ -1,3 +1,30 @@
-<p>
-  signin works!
-</p>
+<div class="inscription">
+  <div class="row">
+  <div class="col-sm-4"></div>
+  <div class="col-sm-4">
+    <div class="box">
+      <div class="logo">
+        <h3>CONNEXION</h3>
+        <p> Que vous souhaitiez acheter ou vendre des services sur Bricouli, il vous suffit de créer gratuitement votre compte. </p>
+        <hr style="width: 90%">
+        <form #DevisForm="ngForm" (ngSubmit)="onSubmit()">
+
+          <div class="form-group">
+          <div class="row">
+            <div class="col-sm-12">
+              <input type="text" placeholder="Nom d'utilisateur" name="uname" required class="form-control">
+              <input type="password" placeholder="Enter Password" name="psw" required class="form-control">
+              <button type="submit">Connexion</button>
+
+            </div>
+          </div>
+
+          <p>Pas encore membre ? Inscrivez-vous. </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4"></div>
+  </div>
+</div>

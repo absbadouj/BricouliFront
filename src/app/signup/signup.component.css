@@ -1,18 +1,50 @@
-.signup { width: 100%; margin-top: -24px; background-color: #f8f8fa;}
-.signup .card{ margin: 100px auto;}
-.signup .card-header{
-    background-color: black !important;
-}
-.signup h1{
-    margin-bottom: 0;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1.208;
-    color: #fff;
-    font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+.box { margin-top: 100px;
+       margin-bottom: 100px;
+       background-color: white;
+       margin-left: 10%;
+       margin-right: 10%;
+       }
+
+.inscription {
+background-color: #22222c;
+width:100%;
+height: 100vh;
+position: fixed;
+overflow: hidden;
 }
 
-.signup .row {
-    width: 100%;
+.inscription .row {
+width: 100%;}
+
+input {
+          background-color: #f1f1f1;
+      }
+.inscription p {
+  font-size: 14px;
+  color: #8e8e8e;
+  margin: 20px 25px;
+  line-height: 20px;
 }
 
+.logo h3 {
+  font-weight: bold;
+  font-size: 23px;
+  text-align: center;
+  padding-top: 35px;
+  color: #2993d1;
+}
+
+h4 {
+margin: 15px 20px;
+font-size: 20px;
+line-height: 1.2;
+}
+
+.form-group {
+  width: 90%;
+  margin-left: 13%;
+  margin-bottom: 30px !important;
+}
+
+.formulaire .col-sm-6{
+}

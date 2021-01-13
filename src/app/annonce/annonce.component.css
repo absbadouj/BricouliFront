@@ -1,5 +1,9 @@
 .annonce .card-header{
+    background-color: white !important;
+}
+.avis .card-header{
     background-color: black !important;
+    height: 80px !important;
 }
 
 .annonce {
@@ -13,15 +17,28 @@
       }
 .annonce .card {
       background-color: white;
-      margin-top: 50px;
+      margin-top: 20px;
       }
 .annonce h1{
-    margin-bottom: 0;
+    margin-bottom: 5px;
     font-size: 24px;
     font-weight: 700;
     line-height: 1.208;
-    color: #fff;
+    color: #55555f !important;
     font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.avis h1{
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.208;
+    color: #fff !important;
+    font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin-top: 15px;
+    margin-left: 20px;
 }
 
 .titre {
@@ -30,3 +47,101 @@
     font-size: 20px;
     line-height: 1.2;
    }
+
+
+
+.image img {
+    margin-left: -20px;
+    margin-top: -20px;
+
+}
+.description {
+    margin: 4px;
+    font-size: initial;
+    line-height: 30px;
+}
+
+.description p {
+margin-top: var(--gutter-L);
+margin-bottom: 0;
+font-size: 16px;
+font-weight: 400;
+line-height: 23px;
+color: #54545e;
+}
+
+.action {
+    background-color: white;
+    margin-top: 93px;
+    padding: 22px 0px 10px 26px;
+
+}
+
+.categorie {
+margin-top: 50px;
+}
+
+.categorie p {
+color: #685471;
+font-size: 13px;
+font-weight: bolder;
+}
+
+.note p {
+margin-left: 20px;
+color: #999fbf;
+margin-top: 5px;
+}
+
+.annonce .col-sm-6 {
+margin-left: 14%;
+margin-right: 35px;
+}
+
+.details h5 {
+font-size: 20px;
+line-height: 1.3;
+font-weight: 600;
+line-height: 1.278;
+color: #6c6c6c;
+margin-bottom: 21px;
+margin-left: 8px;
+}
+
+.details p {
+line-height: 10px;
+margin-left: 22px;
+}
+
+.details button {
+padding: 10px 56px;
+margin-left: 7%;
+margin-bottom: 20px;
+background-color: #1183c8;
+}
+
+.annonce .card-header a {
+    float: right;
+    margin-right: 25px;
+    color: white;
+    text-decoration: none;
+    margin-top: -64px;
+    background-color: black;
+    padding: 10px;
+}
+
+.annonce .details button.commander {
+padding: 10px 81px;
+margin-left: 7%;
+}
+
+.action2 {
+    background-color: white;
+    margin-top: 50px;
+    padding: 22px 0px 10px 26px;
+
+}
+
+.details {
+margin-top: 6px;
+}

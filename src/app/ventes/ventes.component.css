@@ -2,6 +2,7 @@
 
 .ventes .card-header{
     background-color: black !important;
+    height: 80px;
 }
 .ventes h1{
     margin-bottom: 0;
@@ -10,4 +11,37 @@
     line-height: 1.208;
     color: #fff;
     font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.ventes .card-header select {
+    float: right;
+    margin-right: 25px;
+    color: white;
+    text-decoration: none;
+    margin-top: -23px;
+}
+.ventes .card-header .form-control {
+width: 30%;
+height: 30px;
+text-align: center;
+margin-top: -28px;
+margin-left: auto;
+margin-right: auto;
+font-size: 14px;
+}
+
+#filter {
+text-align: center;
+margin-top: -28px;
+margin-left: auto;
+margin-right: auto;
+}
+
+select {
+    background-color: black;
+    font-size: 14px;
+    border: 2px solid white;
+    width: 18% !important;
 }

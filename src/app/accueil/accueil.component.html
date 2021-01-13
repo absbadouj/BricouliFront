@@ -1,36 +1,31 @@
 <div class="accueil">
   <div class="banner">
-
   </div>
   <div class="row services" >
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
+    <div class="col-sm-12">
       <div class="srvcs">
         <div class="row" *ngIf="annonceservice.listAnnonces">
-          <div class="col-sm-4" *ngFor="let f of annonceservice.listAnnonces">
-            <div class="serviceIllu">
-              <img src="{{'data:image/jpg;base64,' + f.image.data}}">
+            <div class="col-sm-4" *ngFor="let f of annonceservice.listAnnonces">
+              <div class="vignette">
+                <img src="{{'data:image/jpg;base64,' + f.image.data}}">
+                <div class="serviceBottom">
+                  <div class="serviceTitle">
+                    <a [routerLink]="[ '/annonce/type',f.idAnnonce,'path' ]"><h2> Je vais créer un site internet pro </h2></a>
+                  </div>
+                  <div class="serviceAuteur">
+                    <img src="{{'data:image/jpg;base64,' + f.image.data}}">
+                    <p> Par Nom et prénom</p>
+                    {{ f.annonceur.designation }}
+                  </div>
+                  <div class="btn-cmd">
+                    <a [routerLink]="[ '/ventes/creation-de-service']">Commander</a>
+                  </div>
+
+                </div>
+              </div>
             </div>
-            <div class="serviceButtom">
-              <div class="serviceTitle">
-                <a [routerLink]="[ '/annonce/type',f.idAnnonce,'path' ]" ><h1> {{ f.titre }} </h1></a>
-
-
-              </div>
-              <div class="serviceAuteur">
-                {{ f.annonceur.designation }}
-
-
-
-              </div>
-              <div class="btn-reset">
-                <a>Achetez Maintenant!</a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
-    <div class="col-sm-2"></div>
   </div>
 </div>

@@ -17,6 +17,7 @@
                 </div>
 
                 <div class="form-group">
+                  <br>
                   <h4 class="titre">Catégorie</h4>
                   <p>  Suggérez à notre équipe de modération la catégorie la plus adaptée à votre microservice. Vous ne pourrez plus la modifier par la suite. </p>
                   <div class="row">
@@ -45,11 +46,12 @@
                   </div>
                 </div>
                 <div class="form-group">
+                  <br>
                     <h4 class="titre">Description</h4>
                     <p> C’est la partie la plus importante de votre annonce, alors soignez-la ! Rédigez un texte original, présentez-vous, vérifiez attentivement votre orthographe, rassurez vos futurs clients sur vos compétences et détaillez ce que vous faites. Définissez des limites, et bien sûr appliquez nos conseils (disponibles sur l’aide) pour que votre microservice soit validé par notre équipe de modération.  </p>
-                  <textarea id="Body" name="Body" [(ngModel)]="AnnonceModel.description" #Body="ngModel" cols="50" rows="8" class="form-control" maxlength="2000"></textarea>
+                  <textarea id="Body" name="Body" [(ngModel)]="AnnonceModel.description" #Body="ngModel" cols="50" rows="10" class="form-control" maxlength="2000"></textarea>
                 </div>
-                <div class="form-group">
+                <div class="form-group"><br><br>
                   <h4 class="titre">Délai de réalisation</h4>
                   <p>  C’est la durée que prendra votre service basique uniquement, entre le moment où le modérateur accepterez la commande et celui où vous la livrerez. </p>
                   <div class="row">
@@ -75,21 +77,12 @@
                 </div>
 
                 <div class="form-group">
+                  <br><br>
                   <h4 class="titre">Galerie</h4>
                   <p> La 1re image, principale, sera utilisée dans la recherche, les catégories, et sur votre profil. C’est la plus importante. Afin que votre service se démarque des autres, privilégiez une miniature lisible en format réduit, en rapport direct avec ce que vous faites dans votre annonce, et surtout : de votre création. </p>
                   <div class="row">
                     <div class="col-sm-12 imageinsert">
                       <input type="file" ng-model="file_upload" #fileInput id="file" accept="image/*"  (change)="fileChange($event)" style="height: 100%" class="form-control">
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <h4 class="titre">Consignes de réalisation</h4>
-                  <p> C’est le premier message privé que votre client recevra automatiquement après avoir commandé. Demandez-lui tout ce dont vous avez besoin pour mener à bien votre commande : Photos, exemples, adresse de livraison, demander les préferences et les éxigences de la client. etc.  </p>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <textarea id="Consigne" name="Consigne"  cols="50" rows="4" class="form-control" maxlength="1000"></textarea>
                     </div>
                   </div>
                 </div>
@@ -109,7 +102,7 @@
                     </div>
                   </div>
               </div>
-                <div class="form-group">
+                <div class="form-group"><br><br>
                   <h4 class="titre">Prix de départ</h4>
                   <p>  Choisissez le prix de départ de votre annonce basique de location de matériel basique, c’est-à-dire sans options.</p>
                   <div class="row">

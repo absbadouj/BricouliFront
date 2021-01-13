@@ -1,33 +1,76 @@
 <div class="annonce">
   <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-7">
+    <div class="col-sm-6">
+      <div class="categorie">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;Type:&nbsp;&nbsp;test&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;Categorie: &nbsp;&nbsp;test</p>
+      </div>
       <div class="card" *ngIf="annonceservice.Oneannonce">
         <div class="card-header">
-          <h1>hello</h1>
+          <h1>{{ annonceservice.Oneannonce.titre }}</h1>
+          <div class="note">
+           <p>Note : 5.0 Avis(32)</p>
+          </div>
+          <a [routerLink]="[ '/ventes/creation-de-service']">Ville: Hoceima</a>
         </div>
         <div class="card-body" >
-          <div class="titre">{{ annonceservice.Oneannonce.titre }}</div>
+          <div class="image">
+            <img src="{{'data:image/jpg;base64,' + annonceservice.Oneannonce.image.data}}" width="728px" height="380px">
+          </div><br>
+          <div class="description">
+            <p>{{ annonceservice.Oneannonce.description }}</p>
+          </div>
         </div>
       </div>
+      <div class="avis">
+        <div class="card">
+          <div class="card-header">
+            <h1>Avis des clients</h1>
+          </div>
+          <div class="card-body">
+
+
+          </div>
+        </div>
+      </div>
+
     </div>
     <div class="col-sm-3">
       <div class="action">
+        <div class="details">
+        <!--  <h5>>&nbsp;&nbsp;&nbsp;&nbsp;Résumé</h5> -->
+          <p>Date de publication :</p>
+          <p>Durée de livraison :</p>
+          <p>Nombre d'avis positive: </p>
+          <p>Nombre d'avis négative: </p>
+          <hr style="width: 73%;margin: 20px 28px;">
 
-        <div class="row">
           <a [routerLink]="[ '/devis',annonceservice.Oneannonce.idAnnonce ]">
             <button type="button" class="btn btn-success">Demander un devis</button>
           </a>
-        </div>
-
-        <div class="row">
           <a [routerLink]="[ '/paiement',annonceservice.Oneannonce.idAnnonce ]">
-            <button type="button" class="btn btn-primary"> Commander le service </button>
+            <button type="button" class="btn btn-primary commander"> Commander </button>
           </a>
         </div>
+      </div>
 
+      <div class="action2">
+        <div class="annonceur">
+          <h5>>&nbsp;&nbsp;&nbsp;&nbsp;Résumé</h5>
+          <p>Date de publication :</p>
+          <p>Durée de livraison :</p>
+          <p>Nombre d'avis positive: </p>
+          <p>Nombre d'avis négative: </p>
+          <hr style="width: 90%; margin: 20px 0px;">
+
+          <a [routerLink]="[ '/devis',annonceservice.Oneannonce.idAnnonce ]">
+            <button type="button" class="btn btn-success">Demander un devis</button>
+          </a>
+          <a [routerLink]="[ '/paiement',annonceservice.Oneannonce.idAnnonce ]">
+            <button type="button" class="btn btn-primary commander"> Commander </button>
+          </a>
+        </div>
       </div>
     </div>
-    <div class="col-sm-1"></div>
+
   </div>
 </div>

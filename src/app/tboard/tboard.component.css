@@ -2,6 +2,7 @@
 
 .tboard .card-header{
     background-color: black !important;
+    height: 80px;
 }
 
 .tboard .row {
@@ -17,8 +18,13 @@
     line-height: 1.208;
     color: #fff;
     font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin-top: 15px;
+    margin-left: 20px;
 }
 
 .card1, .card2, .card3 {
-margin: 10px;
-background-color: #007bff !important;}
+margin-right: 10px;
+background-color: #007bff !important;
+margin-left: 53px;
+height: 90px;
+}

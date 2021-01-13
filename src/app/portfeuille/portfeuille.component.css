@@ -2,6 +2,7 @@
 
 .portfeuille .card-header{
     background-color: black !important;
+    height: 80px !important;
 }
 .portfeuille h1{
     margin-bottom: 0;
@@ -10,4 +11,11 @@
     line-height: 1.208;
     color: #fff;
     font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin-top: 14px;
+    margin-left: 20px;
+}
+
+.col1, .col2, .col3 {
+background-color: gainsboro;
+padding: 10px 20px;
 }

@@ -1,7 +1,15 @@
 .Profilpublic { width: 100%; margin: 0px; background-color: white;}
 
 .Profilpublic .card-header{
-    background-color: black !important;
+    background-color: black !important; height: 80px !important;
+}
+
+.Profilpublic .card-header a {
+    float: right;
+    margin-right: 25px;
+    color: white;
+    text-decoration: none;
+    margin-top: -23px;
 }
 .Profilpublic h1{
     margin-bottom: 0;
@@ -10,8 +18,20 @@
     line-height: 1.208;
     color: #fff;
     font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin-top: 15px;
+    margin-left: 20px;
 }
 
 .Profilpublic .row {
     width: 100%;
+}
+
+.Profilpublic h5 {
+font-size: large;
+margin-top: 25px;
+font-weight: revert;
+}
+
+.Profilpublic h6 {
+font-size: small;
 }
