@@ -2,9 +2,25 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.4.
 
-# BricouliFront Demo
 
-![alt text](https://i.postimg.cc/0MYV8yXx/Screenshot-2021-01-26-Bricouli-Front.png)
+## Demo
+
+![alt text](https://i.postimg.cc/wvPZQtht/Screenshot-2021-01-26-Bricouli-Front.png)
+
+![alt text](https://i.postimg.cc/g2d5sb6K/Screenshot-2021-01-20-Bricouli-Front-1.png)
+
+![alt text](https://i.postimg.cc/T2LZY96n/Screenshot-2021-01-26-Bricouli-Front-3.png)
+
+![alt text](https://i.postimg.cc/LXhGPkZK/Screenshot-2021-01-26-Bricouli-Front-1.png)
+
+![alt text](https://i.postimg.cc/kM0LVbJz/Screenshot-2021-01-20-Bricouli-Front.png)
+
+![alt text](https://i.postimg.cc/nLFyFfFL/Screenshot-2021-01-26-Bricouli-Front-5.png)
+
+![alt text](https://i.postimg.cc/hG2HhZv1/Screenshot-2021-01-26-Bricouli-Front-2.png)
+
+![alt text](https://i.postimg.cc/28nMnS36/Screenshot-2021-01-26-Bricouli-Front-4.png)
+
 
 ## Development server
 
