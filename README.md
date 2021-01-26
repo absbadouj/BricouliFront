@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # BricouliFront Demo
 
-![alt text](https://drive.google.com/file/d/1OHL464eNOadOxq-ArvYTt4X-K2g2TlfH/view?usp=sharing)
+![alt text](https://i.postimg.cc/0MYV8yXx/Screenshot-2021-01-26-Bricouli-Front.png)
 
 ## Development server
 
