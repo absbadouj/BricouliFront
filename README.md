@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.4.
 
+# BricouliFront Demo
+
+![alt text](https://drive.google.com/file/d/1OHL464eNOadOxq-ArvYTt4X-K2g2TlfH/view?usp=sharing)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
